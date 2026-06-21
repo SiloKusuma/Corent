@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corent — AI Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>⚡ Corent</h1>
+      <p class="subtitle">Auto-Discussion AI Builder</p>
+      <div class="status-badge" id="statusBadge">● Idle</div>
+    </header>
+
+    <section class="agent-info" id="agentInfo">
+      <div class="info-card">
+        <h3>🤖 Agent</h3>
+        <p id="agentName">—</p>
+      </div>
+      <div class="info-card">
+        <h3>🔌 Provider</h3>
+        <p id="providerName">—</p>
+      </div>
+      <div class="info-card">
+        <h3>🧠 Model Utama</h3>
+        <p id="mainModel">—</p>
+      </div>
+      <div class="info-card">
+        <h3>💬 Model Partner</h3>
+        <p id="partnerModel">—</p>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card">
+        <h2 id="totalTurns">0</h2>
+        <p>Total Percakapan</p>
+      </div>
+      <div class="stat-card">
+        <h2 id="totalCategories">0</h2>
+        <p>Kategori Aktif</p>
+      </div>
+      <div class="stat-card">
+        <h2 id="outputFiles">0</h2>
+        <p>File Output</p>
+      </div>
+    </section>
+
+    <section class="categories">
+      <h2>📊 Kategori Data</h2>
+      <div class="cat-grid" id="catGrid"></div>
+    </section>
+
+    <section class="conversations">
+      <h2>💬 Percakapan Terbaru</h2>
+      <div class="conv-list" id="convList"></div>
+    </section>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
